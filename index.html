@@ -13,35 +13,9 @@
 
 <body>
   <!----NavBar section---->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark-custom">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="Recursos/logo.png" alt="Logo Xpraiss" width="38" height="30" class="d-inline-block align-text-top">
-        Xpraiss
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Servicios">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contactos</a>
-          </li>
-        </ul>
+  <div id="menu-p">
 
-      </div>
-    </div>
-  </nav>
+  </div>
   <!----Header Section---->
   <div id="header" class="fondo_p">
     <div class="row">
@@ -267,13 +241,13 @@
           </div>
           <div class="col-md-6 item text ">
             <h3>Xpraiss</h3>
-            <p>Un breve parrafo describiendo la empresa.</p>
+            <p>"Redefine el mañana".</p>
           </div>
           <div class="col item social">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-snapchat"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/xpraiss"><i class="fab fa-facebook"></i></a>
+            <!--<a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-snapchat"></i></a>-->
+            <a href="https://www.instagram.com/xpraiss/"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
         <p class="copyright">Xpraiss © 2021</p>
@@ -287,6 +261,49 @@
   <script src="Frameworks/scrollreveal/js/scrollreveal.js"></script>
   <script src="Frameworks/smoothscroll/smooth-scroll.min.js"></script>
   <script>
+    //menu
+    var anchoVentana = window.innerWidth
+    var altoVentana = window.innerHeight
+    $("#menu-p").addClass("fixed-top");
+    $(window).scroll(function () {
+      console.log("el offset es: ", $("#menu-p").offset().top)
+      if ($("#menu-p").offset().top >= altoVentana - 50) {
+       // $("#menu-p").addClass("aparece")
+        $("#menu-p").html(`<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark-custom">
+                          <div class="container-fluid">
+                            <a class="navbar-brand" href="#">
+                              <img src="Recursos/logo.png" alt="Logo Xpraiss" width="38" height="30" class="d-inline-block align-text-top">
+                              Xpraiss
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                  <a class="nav-link active" href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#Servicios">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#contacto">Contactos</a>
+                                </li>
+                              </ul>
+
+                            </div>
+                          </div>
+                        </nav>`)
+        
+      }
+
+
+    });
+    //fin menu
     var scroll = new SmoothScroll('a[href*="#"]', {
       speed: 10,
       offset: 50

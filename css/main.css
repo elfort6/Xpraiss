@@ -35,7 +35,9 @@
   width: 100%;
   background-color: #faf4ed;
 }
-
+.aparece{
+  transition: all 1s ease;
+}
 
 .seccion{
     background: url(../Recursos/por2.jpg);
