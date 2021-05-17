@@ -1,3 +1,17 @@
+@font-face {
+  font-family: NotoSans;
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+.boton_i{
+  font-family: 'Roboto Mono', monospace;
+}
+h1,h2,h3,h4,h5,p{
+  font-family: NotoSans;
+}
+.card-body p{
+  text-align: justify;
+}
 .fondo_p{
     width: 100%;
     height: 100vh;
@@ -13,6 +27,17 @@
     font-size: 60px;
     color: black;
 }
+#SobreNosotros{
+  background-image: url(../Recursos/carousel/3.jpg);
+}
+.contentsn{
+  background: rgb(243,210,102);
+  background: -moz-linear-gradient(90deg, rgba(243,210,102,1) 42%, rgba(0,232,255,0) 100%, rgba(9,9,121,0) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(243,210,102,1) 42%, rgba(0,232,255,0) 100%, rgba(9,9,121,0) 100%);
+  background: linear-gradient(90deg, rgba(243,210,102,1) 42%, rgba(0,232,255,0) 100%, rgba(9,9,121,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f3d266",endColorstr="#090979",GradientType=1);
+  margin: 0px;
+}
 .seccion_f{
     background-color: rgb(243, 210, 102);
     /*max-width: 1100px;*/
@@ -21,12 +46,13 @@
     overflow: hidden;
     margin: auto;
     color: black;
-    padding: 20px 0px;
+    /*padding: 20px 0px;*/
+   
 
 }
 #SobreNosotros div{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 .bg-dark-custom{
   background-color: #000;
@@ -61,9 +87,15 @@
 }
 /*Conct us!*/
 /* section */
+  .ciner{
+    background-color: #fff; 
+    padding: 15px; 
+    border-radius: 20px;
+  }
 
   #contacto {
     padding: 20px 0;
+    background-color: rgb(214, 187, 112);
   }
   #contacto h2 {
     margin: 0;
