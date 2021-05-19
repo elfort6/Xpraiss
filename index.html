@@ -20,7 +20,7 @@
   <div id="header" class="fondo_p">
     <div class="row">
       <div class="col-12 text-center">
-        <img src="Recursos/LOGO/3.png" alt="" class="img-fluid">
+        <img src="Recursos/LOGO/3.webp" alt="" class="img-fluid" width="400vh" height="400vh">
         <!--h1>Xpraiss</h1-->
       </div>
       <div class="col-12 text-center">
@@ -146,8 +146,17 @@
               antigua. Esto lo conseguimos a través del Inbound marketing brindando contenido útil y relevante de alta
               calidad, y a través de la fidelización con canales conversacionales como el email marketing o chatbots
               ultra personalizados.
+            </p>  
+            <p>
+              El inbound marketing se encarga de atraer nuevos prospectos a la empresa, interactuar con ellos a gran
+              escala y deleitarlos de manera individual.
             </p>
-
+            <p>
+              Además, trabaja en colaboración con los equipos de ventas y servicio de atención al cliente para mantener
+              el flywheel marketing, de manera que el crecimiento de la empresa no se detenga. Se trata, sin duda, de
+              una gran tarea; sin embargo la metodología inbound y el Marketing Hub te ofrecen todo lo que necesitas
+              para llevarla a cabo y generar grandes resultados
+            </p>
           </div>
         </div>
         <div class="col-md-6  revelar  card">
@@ -321,7 +330,7 @@
     var anchoVentana = window.innerWidth
     var altoVentana = window.innerHeight
     window.onresize = function () {
-      console.log("este es el ancho",anchoVentana)
+      console.log("este es el ancho", anchoVentana)
       if (window.innerWidth < 776) {
         $("#datrel").html(`
           <div class="container text-center">
@@ -372,7 +381,7 @@
         </div>
           `)
 
-      }else{
+      } else {
         $("#datrel").html(`
           <div class="container text-center">
           <h1>Esto te puede interesar</h1>
@@ -479,7 +488,7 @@
     }
     $("#menu-p").addClass("fixed-top");
     $(window).scroll(function () {
-     // console.log("el offset es: ", $("#menu-p").offset().top)
+      // console.log("el offset es: ", $("#menu-p").offset().top)
       if ($("#menu-p").offset().top >= altoVentana - 75) {
         // $("#menu-p").addClass("aparece")
         $("#menu-p").html(`<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark-custom">
