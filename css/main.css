@@ -35,7 +35,7 @@ p{
     font-size: 60px;
     color: black;
 }
-#SobreNosotros{
+/*#SobreNosotros{
   background-image: url(../Recursos/portadas/Quien_somos.webp);
   background-size: cover;
 }
@@ -49,15 +49,18 @@ p{
 }
 .seccion_f{
     background-color: rgb(243, 210, 102);
-    /*max-width: 1100px;*/
     width: 100%;
-    /*height: 40vh;*/
     overflow: hidden;
     margin: auto;
     color: black;
-    /*padding: 20px 0px;*/
    
 
+}*/
+.centra{
+    /*IMPORTANTE*/
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
 }
 #SobreNosotros div{
     padding-top: 25px;
