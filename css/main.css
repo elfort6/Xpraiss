@@ -56,6 +56,17 @@ p{
    
 
 }*/
+.seccion_f2{
+  background-color: black;
+}
+.fuente_blanca{
+  color: #fff;
+  text-align: start;
+}
+.fuente_amarilla{
+  color: yellow;
+  text-align: start;
+}
 .centra{
     /*IMPORTANTE*/
     /*display: flex;*/
